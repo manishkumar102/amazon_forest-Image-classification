@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    h1{
+        color:indianred;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 300%;
+    }
+    h2{
+        color:rgb(50, 133, 133);
+        font-family: monospace;
+        font-size: 200%;
+    }
+    p{
+        color: rgb(36, 119, 139);
+        font-family: serif;
+        font-size: 150%;
+    }
+</style>
+        <a href="{{url_for('index')}}">Home
+            <style>
+                    a:link, a:visited { 
+                      background-color:#6b4092;
+                      color: white;
+                      padding: 15px 25px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                    }
+
+                    a:hover, a:active {
+                      background-color: rgb(179, 38, 33);
+                    }
+            </style></a>
+    <h1><b>Team Member</b></h1>
+    <h2>Manish Kumar</h2>
+    <p>Enrollment No : E19CSE102<BR>
+    Email ID: E19CSE102@bennett.edu.in </p>
+    
+
+{% endblock %}

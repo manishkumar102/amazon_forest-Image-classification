@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<a href="{{url_for('index')}}">Home</a>
+<h1>Input</h1>
+
+<p>
+  <h1>Upload new File</h1>
+  <form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+  </form>
+</p>
+
+{% endblock %}

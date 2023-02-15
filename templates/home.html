@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+{% block title %} AMAZON FROM SPACE {% endblock %}
+
+{% block body %}
+<!-- Header -->
+<header id="header">
+	<a class="logo" href="{{url_for('index')}}">Amazon From Space</a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="{{url_for('index')}}">Home</a></li>
+		<li><a href="{{url_for('stats')}}">Data & Stats</a></li>
+	</ul>
+</nav>
+
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+		<h1>Amazon From Space</h1>
+		<p>An attempt to tackle deforestation using sattelite image data<br />
+		 <a href="#"></a></p>
+		<video autoplay loop muted playsinline src="{{ url_for('static', filename='assests/images/banner.mp4') }}"></video>
+	</div>
+	<video autoplay loop muted playsinline src="{{ url_for('static', filename='assets/images/banner.mp4') }}"></video>
+</section>
+
+<!-- Highlights -->
+<section class="wrapper">
+	<div class="inner">
+		<header class="special">
+			<h2>Amazon Rainforest Fire</h2>
+			<p>The fire has stired the entire world and shaken everyone up from their sleep. Resarchers belive that one of the primary reason for the fires is deforestation.</p>
+		</header>
+		<div class="highlights">
+			<section>
+				<div class="content">
+					<header>
+						<a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a>
+						<h3>Our Team</h3>
+					</header>
+					<ol>
+						<li>Isha Puthige</li>
+						<li>Himanshu Mittal</li>
+						<li>Chahat Bindra</li>
+						<li>Dhvani Vashist</li>
+					</ol>
+				</div>
+			</section>
+
+			<section>
+				<div class="content">
+					<header>
+						<a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+						<h3>Stats</h3>
+					</header>
+					<ol>
+						<li> Rainforests cover has reduced from 14% a mere 6% </li>
+						<li>Experts estimates that we are losing 137 plant, animal and insect species every single day due to rainforest deforestation. </li>
+						<li>The planet has already lost 80 percent of its forest cover to deforestation.</li>
+					 </ol>
+				</div>
+			</section>
+			<section>
+				<div class="content">
+					<header>
+						<a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
+						<h3>Upload Image</h3>
+					</header>
+
+          <form method=post enctype=multipart/form-data>
+            <input type=file name=file>
+            <input type=submit value=Upload>
+          </form>
+				</div>
+			</section>
+
+		</div>
+	</div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="wrapper">
+	<div class="inner">
+		<h2>deforestation</h2>
+		<p> The ongoing  fires burning in the Brazilian Amazon are assisting in  confirming the findings of a new study published in July 2019 which shows a major interrelation  between land usage and fire incidence — with deforestation and development adding more to fire occurrence than climate change . New research shows that unrestricted deforestation, along with the construction of new highways, could expand wildfire risk in the Amazon basin by more than 70 % by 2100, even inside fortified areas and aboriginal reserves that have relatively intact forests. Scientists suggest that attempts to improve sustainable land management and curtail future deforestation and development could offer the best defenses against the surging threat wildfires pose due to the increment in heat and drought brought by the increasing climate change.</p>
+	</div>
+</section>
+
+<!-- Testimonials -->
+<section class="wrapper">
+	<div class="inner">
+		<header class="special">
+			<h2>Some Reviews</h2>
+		</header>
+		<div class="testimonials">
+			<section>
+				<div class="content">
+					<blockquote>
+						<p>The project is good. It will help in dealing with issues especially related to forests. It is one of the real world prototype projects and has the potential to turn into a research problem of some caliber. </p>
+					</blockquote>
+					<div class="author">
+						<div class="image">
+						</div>
+						<p class="credit">- <strong>Dr Tanveer Ahmad</strong></p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="content">
+					<blockquote>
+						<p>According to me the idea is unique and innovative. It will help environmentalists and deep learning enthusiasts to get deeper knowledge about  this topic , if the results are successful . We are always there to help the team!</p>
+					</blockquote>
+					<div class="author">
+						<div class="image">
+
+						</div>
+						<p class="credit">- <strong>Dr Rishav Singh</strong></p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="content">
+					<blockquote>
+						<p>Satellite imaging is interesting and widely spread field . Dealing with noisy images can be challenging though . But it would definitely help them in future projects. All the best to the team. </p>
+					</blockquote>
+					<div class="author">
+						<div class="image">
+						</div>
+						<p class="credit">- <strong>Dr Shyam Rajput</strong></p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<!-- <section>
+				<h3>Accumsan montes viverra</h3>
+				<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+			</section> -->
+			<!-- <section>
+				<h4>Sem turpis amet semper</h4>
+				<ul class="alt">
+					<li><a href="#">Dolor pulvinar sed etiam.</a></li>
+					<li><a href="#">Etiam vel lorem sed amet.</a></li>
+					<li><a href="#">Felis enim feugiat viverra.</a></li>
+					<li><a href="#">Dolor pulvinar magna etiam.</a></li>
+				</ul>
+			</section> -->
+			<section>
+				<h4>Project Link</h4>
+				<ul class="plain">
+					<!-- <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li> -->
+					<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+				</ul>
+			</section>
+		</div>
+
+</footer>
+{% endblock %}

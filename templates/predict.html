@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<img src="{{ url_for('uploaded_file', filename=image)}}" width=250 height=250 />
+
+{% for label in labels %}
+<h1> {{label}} </h1>
+{% endfor %}
+
+{% endblock %}
